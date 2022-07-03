@@ -5,43 +5,66 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Include Health Program</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="../assets/favicon.png" />
     <link rel="stylesheet" href="../style.css"/>
 </head>
-<body>
-    <header >
-        <section class="cabecera" >
-            <a class="cabecera__logo" href="../index.html">
-                <img src="../assets/inhe.png" alt="logo" width="150"/>
+
+
+<body class="bg-info container-fluid style=" bg-success p-2 style="--bs-bg-opacity: .3;">
+    <!-- inicio cabecera de la pagina -->
+    <header class="bg-primary bg-gradient fixed-top container-fluid">
+        <section class="d-flex justify-content-evenly row" >
+
+            <a class=" col" href="../index.html">
+                <img class="pt-2" src="../assets/inhe.png" alt="logo" width="150"/>
             </a>
-            <nav>
-                <ul class="cabecera__lista">
-                    <li class="cabecera__lista__elemento"><a href="../index.html">Home</a></li>
-                    <li class="cabecera__lista__elemento"><a href="./prestaciones.html">Prestaciones</a></li>
-                    <li class="cabecera__lista__elemento"><a href="./institucional.html">Institucional</a>
-                        <ul>
-                            <li class="cabecera__lista__elemento en-linea">
-                                <a href="../pages/autoridades.html">Autoridades</a>
+            <h1 class=" col text-light text-center pt-2">EL PROGRAMA</h1>
+            <nav class="rednav col navbar navbar-dark navbar-expand-lg bg-primary fw-bold pb-5">
+                <div class="container">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="../index.html">Home</a>
                             </li>
-                            <li class="cabecera__lista__elemento en-linea">
-                                <a href="../pages/quienes_somos.html">Quienes somos</a>
+                            <li class="nav-item">
+                                
+                                <a class="nav-link" aria-current="page" href="./prestaciones.html">Prestaciones</a>
                             </li>
+                            <li class="nav-item dropdown">
+                                
+                            <a class="nav-link dropdown-toggle" href="./institucional.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Institucional
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="./autoridades.html">Autoridades</a></li>
+                                <li><a class="dropdown-item" href="./quienes_somos.html">Quienes Somos</a></li>
+                                
+                            </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./contacto.html">Autoridades</a>
+                            </li>                      
                         </ul>
-                    </li>
-                    <li class="cabecera__lista__elemento"><a href="./contacto.html">Contacto</a></li>
-                </ul>
+                    </div>
+                </div>
             </nav>
-            <h1 class="cabecera__titulo">SOBRE EL PROGRAMA</h1>
+            
         </section>
-    <main class=" about parallax">
+    </header>
+    <main class="main">
+        <section class="py-5 mt-5">
+            <img src="../assets/fondo_quienes_somos.jpeg" alt="quienes" width="100%"/>
+        </section>
         <section>
-            <img src="../assets/fondo_quienes_somos.jpeg" alt="quienes"/>
-        </section>
-        <section class="about__datos">
             <p>El Programa Include Health, no es una obra social, sino que brinda prestaciones mediante convenios    directos con prestadores y con las provincias.</p>
             <p>Es importante señalar que los beneficiarios de este programa son solo aquellas personas que reciben una pensión no contributiva y la Agencia Nacional de Discapacidad está obligada, al igual que las provincias, a cubrir las prestaciones.</p>
         </section>
-        <section class="about__datos">
+        <section >
             <h3>¿A quien está dirigido?</h3>
             <p>Puede afiliarse al programa toda persona humana, titular de una Pensión no Contributiva (PNC) que no posea cobertura médica como beneficiario del Sistema Nacional de Seguro de Salud o de la Obra Social Provincial.</p>
             <p>La afiliación no es automática al momento de darse la Pensión No Contributiva, sino que requiere un trámite voluntario de afiliación por parte del titular o representante legal.</p>
@@ -70,17 +93,27 @@
             <p>Gratuito.</p>
         </section>
     </main>
-    <footer class="pie">
+    <footer class="bg-dark d-flex flex-row justify-content-evenly container-fluid">
         <!-- accesos con referencias relativas -->
-        <a href="../index.html">
-            <img src="../assets/inhe.png" alt="logo" width="150"/>
-        </a>
-        <a href="../pages/institucional.html">
-            <h4 class="en-linea">INSTITUCIONAL</h4>
-        </a>
-        <a href="../pages/contacto.html">
-            <h4 class="en-linea">CONTACTO</h4>
-        </a>
+        <section class="row text-center  ">
+            <div class="col-sm-4">
+                <a  href="../index.html">
+                    <img src="../assets/inhe.png" alt="logo" width="150"/>
+                </a>
+            </div>
+            <div class="col-sm-4">
+                <a class="text-decoration-none text-light" href="./institucional.html">
+                    <h4>INSTITUCIONAL</h4>
+                </a>
+            </div>
+            <div class="col-sm-4">
+                <a class="text-decoration-none text-light" href="./contacto.html">
+                    <h4>CONTACTO</h4>
+                </a>
+            </div>      
+
+        </section>       
+        
     </footer>
 </body>
 </html>

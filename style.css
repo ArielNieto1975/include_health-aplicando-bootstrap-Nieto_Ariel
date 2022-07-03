@@ -48,3 +48,9 @@
     }
     
 }
+@media (max-width: 436px ){
+    .main{
+        margin-top: 100px;
+    }
+    
+}
