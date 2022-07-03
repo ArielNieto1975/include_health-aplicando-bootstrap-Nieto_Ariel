@@ -17,11 +17,23 @@
     transform: scale(1.05, 1.05);     
 }
 
+.autoridades div:hover{
+    background-color: rgba(128, 128, 128, 0.3);
+    font-weight: bolder;
+}
+
 .datos{
     text-shadow: 0 0 15px black;
 }
 
-
+@media (max-width: 767px ){
+    .autoridades li{
+        list-style: none;
+        padding-bottom: 2rem;
+        text-align: center;
+        font-size: xx-large;
+    }
+}
 
 @media (max-width: 500px ){
     .tabla{
