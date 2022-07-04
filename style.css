@@ -12,9 +12,21 @@
     color: #ffffff;
     text-shadow: 0 0 15px black;
 }
+.navbar a{
+    color: black;
+}
+
+.dropdown-menu{
+    background-color: aqua;
+}
+
+.acceso1, .acceso2, .acceso3{
+    transition: 0.3s;
+}
 
 .acceso1:hover, .acceso2:hover, .acceso3:hover{
-    transform: scale(1.05, 1.05);     
+    transform: scale(1.05, 1.05);   
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.8);  
 }
 
 .autoridades div:hover{
